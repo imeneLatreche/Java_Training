@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PrimeNumberFinder {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter your upper limit");
+		Scanner input = new Scanner(System.in);
+		int number  = input.nextInt();
+		ArrayList<Integer> primeNumber = new ArrayList<Integer>();
+		PrimeNumberChecker checker = new PrimeNumberChecker();
+	}
+
+}

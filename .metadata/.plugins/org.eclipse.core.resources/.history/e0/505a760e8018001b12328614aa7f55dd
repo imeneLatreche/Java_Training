@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Palindrom {
+	public static void main(String[] args) {
+		System.out.println("Please enter a string");
+		Scanner input = new Scanner (System.in);
+		String sentence = input.nextLine();
+		input.close();
+
+		if (isPalindrome(sentence))
+			System.out.print("Yes");
+		else
+			System.out.print("No");
+	}
+
+	// Function that returns true if
+	// sentence is a palindrome
+	static boolean isPalindrome(String str) {
+
+		// Pointers pointing to the beginning
+		// and the end of the string
+		int i = 0, j = str.length() - 1;
+
+		// While there are characters toc compare
+		while (i < j) {
+
+			// If there is a mismatch
+			if (str.charAt(i) != str.charAt(j))
+				return false;
+
+			// Increment first pointer and
+			// decrement the other
+			i++;
+			j--;
+		}
+		return true;
+	}
+}

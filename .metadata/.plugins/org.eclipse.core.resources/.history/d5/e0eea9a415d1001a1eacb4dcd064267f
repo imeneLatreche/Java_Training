@@ -1,0 +1,12 @@
+
+public class AudiCar extends CarClass{
+
+	AudiCar(int speed_limit, String color) {
+		super(speed_limit, color);
+	}
+	private float index () {
+		//returns a null index
+		return (speed_limit/factor) * 0;
+	}	
+
+}

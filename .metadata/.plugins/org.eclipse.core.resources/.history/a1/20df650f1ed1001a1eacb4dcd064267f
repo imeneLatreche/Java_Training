@@ -1,0 +1,14 @@
+
+public class  CarClass {
+	int speed_limit = 200;
+	float factor =  1.43f;
+	String color = "red";
+	public CarClass(int speed_limit, String color){
+		this.color = color;
+		this.speed_limit = speed_limit;
+	}
+	
+	float index () {
+		return speed_limit/factor;
+	}	
+}

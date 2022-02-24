@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class PrimeNumberFinder {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter your upper limit");
+		Scanner input = new Scanner(System.in);
+		int upperLimit = input.nextInt();
+		boolean prime = true;
+		Set<Integer> primeNumberList = new TreeSet<Integer>();
+		for (int j = 1; j < upperLimit; j++) {
+			for (int i = 2; i < j; i++) {
+				if (j%i == 0) {
+					prime = false;
+					break;
+				} else {
+					prime = true;
+				}
+			}
+			System.out.println(prime);
+			if (prime == true) {
+				primeNumberList.add(j);
+			} 
+		}
+		System.out.println(primeListNumber);
+	}
+}

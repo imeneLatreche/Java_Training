@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AssignmentTwo {
+
+	public static void main(String[] args) {
+		// Q1 -	Ask the USER for a string
+		System.out.println("Please enter a string");
+		Scanner input = new Scanner (System.in);
+		String sentence = input.nextLine();
+		input.close();
+		
+		// Q2 - Convert that string to all upper-case and print it 
+		System.out.println(sentence.toUpperCase());
+		
+		System.out.println(sentence);
+		
+		// Q3 -	Print the length of that string 
+		System.out.println(sentence.length());
+
+	}
+
+}
